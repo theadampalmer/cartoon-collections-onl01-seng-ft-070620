@@ -15,6 +15,7 @@ end
 
 
 def long_planeteer_calls(calls)
+        binding.pry
   if calls.length > 4
     true
   else
@@ -27,7 +28,6 @@ def find_the_cheese(foods)
   cheese_types = ["cheddar", "gouda", "camembert"]
   foods.collect do |x|
     if cheese_types.include?(x)
-      # binding.pry
       return x
     end
   end
